@@ -1,0 +1,91 @@
+:root {
+  --tl: 0px;
+  --tr: 0px;
+  --bl: 0px;
+  --br: 0px;
+  
+}
+
+html, 
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: grey;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.container{
+  display: flex;
+}
+
+.div-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+}
+
+.div-left input{
+  display: flex;
+  align-items: flex-end; 
+  margin-right: 5px;
+}
+
+.div-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.div-right input{
+  display: flex;
+  align-items: flex-start;
+  margin-left: 5px;
+    
+}
+
+input{
+  width: 30%;
+  text-align: center;
+}
+
+.border{
+    display: flex;
+    border: 3px solid;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    /* border-top-left-radius: var(--tl);
+    border-top-right-radius: var(--tr);
+    border-bottom-left-radius: var(--bl);
+    border-bottom-right-radius: var(--br); */
+    border-radius: var(--tl) var(--tr) var(--br) var(--bl);
+    
+ 
+}
+
+.div-clip{
+  margin-top: 30px;
+  font-family: Verdana;
+  font-size: 20px;
+
+}
+
+.div-clip input{
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+

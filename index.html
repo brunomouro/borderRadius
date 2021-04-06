@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreBorderRadius</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>border radius preview</h1>
+    </header>
+    <div class="container">
+        <div class="div-left">
+            <input type="text" id="tl" onkeyup="atualizaBorda(event)">
+            <input type="text" id="bl" onkeyup="atualizaBorda(event)">
+        </div>
+        <div class="border" id="view"></div>            
+        <div class="div-right">
+            <input type="text" id="tr" onkeyup="atualizaBorda(event)">
+            <input type="text" id="br" onkeyup="atualizaBorda(event)">
+        </div>        
+    </div>
+    <div class="div-clip">
+        <label for="clipboard">border-radius:</label>
+        <input type="text" id="clipboard">
+        <button onclick="copiaTexto()">Copiar</button>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
